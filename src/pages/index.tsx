@@ -4,6 +4,10 @@ import Top from '../components/parts/topExplain'
 import Image from 'next/image'
 import Link from 'next/link';
 import Program from '@/components/parts/program';
+import Profile from '@/components/parts/profile';
+import Contact from '@/components/parts/contact';
+import About from '@/components/parts/about';
+import Footer from '@/components/parts/footer';
 
 
 
@@ -26,11 +30,11 @@ const Home = () => {
 
     return (
         <>
-            <main className="max-w-screen-lg mx-auto relative">
+            <main>
                 <Header />
                 <section className="bg-cover bg-center bg-no-repeat" 
-                    style={{ backgroundImage: 'url(/images/top_image.jpeg)'}}
-                >
+                        style={{ backgroundImage: 'url(/images/top_image.jpeg)'}}
+                    >
                     <div className="flex flex-col items-center min-h-100">
                         <div className="mt-20 relative w-60 h-60 sm:w-80 sm:h-80 rounded-full overflow-hidden border-8">
                             {images.map((img, index) => (
@@ -53,8 +57,14 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <Top />
-                <Program />
+                <div className="max-w-screen-lg mx-auto relative">    
+                    <Top />
+                    <Program />
+                    <About />
+                    <Profile />
+                    <Contact />
+                </div>
+                <Footer />
             </main>
         </>
     );
