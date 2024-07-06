@@ -1,7 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import '../../styles/about.css';
-import '../../styles/common.css';
+import '../../styles/about.module.css';
+import '../../styles/common.module.css';
 
 const TopExplain = () => {
     return (

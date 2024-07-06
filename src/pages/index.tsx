@@ -1,12 +1,11 @@
 import { useState } from 'react';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import About from '../components/parts/about';
 import Staff from '@/components/parts/staff';
 import Plan from '@/components/parts/plan';
 import Footer from '@/components/parts/footer';
-import '../styles/top.css';
+import '../styles/top.module.css';
 
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false);

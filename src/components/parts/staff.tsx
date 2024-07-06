@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link';
-import '../../styles/about.css';
-import '../../styles/staff.css';
-import '../../styles/common.css';
+import '../../styles/about.module.css';
+import '../../styles/staff.module.css';
+import '../../styles/common.module.css';
 
 const Staff = () => {
     return (
