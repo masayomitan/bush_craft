@@ -23,7 +23,7 @@ const Staff = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`${commonStyles.fs20} ${styles.staffMessage}`}>
+                    <div className={`${styles.staffMessage}`}>
                         <p className={commonStyles.bold}>メッセージ</p>
                         社会人ブッシュクラフトサークルという形で、参加者とキャンプをしながら火起こしや自然に目を向けることの楽しさを伝えています。普通のキャンプに比べ、少しハードルが高く感じがちですが、初心者でもできるようにきちんとレベルを合わせて内容を組んでいます。是非遊びに来てね(‘ω’)
                     </div>
@@ -56,7 +56,7 @@ const Staff = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={`${commonStyles.fs20} ${styles.staffMessage}`}>
+                        <div className={`${styles.staffMessage}`}>
                             <p className={commonStyles.bold}>メッセージ</p>
                             主催の技術補助のほか、料理を担当。
                             簡単でおいしく、お腹いっぱい！がモットー。
