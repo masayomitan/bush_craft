@@ -1,12 +1,11 @@
-.background-image {
-    background-image: url(/images/top/top_image_little.png);
+.backgroundImage {
     height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.menu-button {
+.menuButton {
     position: absolute;
     top: 23px;
     left: 23px;
@@ -20,14 +19,14 @@
     cursor: pointer;
 }
 
-.menu-bar {
+.menuBar {
     width: 40px;
     height: 4px;
     background-color: white;
     margin-bottom: 5px;
 }
 
-.menu-dropdown {
+.menuDropdown {
     position: absolute;
     top: 64px;
     left: 16px;
@@ -38,17 +37,13 @@
     padding: 16px;
 }
 
-.menu-item {
+.menuItem {
     color: black;
     margin-bottom: 8px;
     cursor: pointer;
 }
 
-.menu-item:last-child {
-    margin-bottom: 0;
-}
-
-.button-container {
+.buttonContainer {
     position: absolute;
     bottom: 32px;
     width: 100%;
@@ -56,7 +51,7 @@
     justify-content: center;
 }
 
-.contact-button {
+.contactButton {
     background-color: #EAA200;
     color: white;
     padding: 15px 50px;
@@ -68,7 +63,7 @@
     font: normal bold 18px/31px 'Yu Gothic', sans-serif;
 }
 
-.content-container {
+.contentContainer {
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
@@ -89,7 +84,7 @@
     pointer-events: auto;
 }
 
-.side-menu {
+.sideMenu {
     position: fixed;
     top: 0;
     right: 0;
@@ -102,7 +97,7 @@
     transition: transform 1s;
 }
 
-.side-menu.open {
+.sideMenu.open {
     transform: translateX(0);
 }
 
@@ -111,18 +106,10 @@
     cursor: pointer;
 }
 
-.side-menu-item {
+.sideMenuItem {
     padding: 16px;
     background-color: white;
     margin-bottom: 8px;
     transition: transform 0.7s;
     cursor: pointer;
-}
-
-.side-menu-item:last-child {
-    margin-bottom: 0;
-}
-
-.side-menu-item:hover {
-    background-color: #f0f0f0;
 }

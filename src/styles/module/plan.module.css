@@ -1,12 +1,11 @@
-.plan-card-container {
+.planCardContainer {
     background: #FFFFFF;
-
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px 0 50px;
 }
 
-.plan-card-title {
+.planCardTitle {
     background: #C0D860;
     color: white;
     font-size: 24px;
@@ -16,7 +15,7 @@
     text-align: center;
 }
 
-.plan-card-title-w {
+.planCardTitleW {
     background: #608841;
     color: white;
     font-size: 24px;
@@ -26,13 +25,13 @@
     text-align: center;
 }
 
-.plan-card-body {
+.planCardBody {
     padding: 5px 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.plan-badge {
+.planBadge {
     font-size: 16px;
     color: #EAA200;
     padding: 5px 15px;
@@ -41,7 +40,7 @@
     border: 1px solid #EAA200;
 }
 
-.plan-badge-stay {
+.planBadgeStay {
     font-size: 16px;
     color: #608841;
     padding: 5px 15px;
@@ -50,33 +49,32 @@
     border: 1px solid #608841;
 }
 
-.plan-price {
+.planPrice {
     font-size: 34px;
     font-weight: bold;
 }
 
-.plan-count {
+.planCount {
     font-size: 20px;
     font-weight: 500;
 }
 
-.plan-description {
+.planDescription {
     font-size: 20px;
     line-height: 1.6;
     margin: 20px 0;
 }
 
-
-.plan-remarks-column {
+.planRemarksColumn {
     line-height: 1.6;
     margin: 20px 0;
 }
 
-.other-event-title {
+.otherEventTitle {
     font-size: 20px;
 }
 
-.other-event-description {
+.otherEventDescription {
     font-size: 20px;
     line-height: 1.6;
     margin: 20px 0;

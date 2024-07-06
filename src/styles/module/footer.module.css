@@ -7,51 +7,51 @@
     position: relative;
 }
 
-.footer-logo {
+.footerLogo {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.footer-links {
+.footerLinks {
     list-style: none;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
 }
 
-.footer-links li {
+.footerLinks li {
     margin-bottom: 10px;
 }
 
-.footer-links a {
+.footerLinks a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-.footer-links a:hover {
+.footerLinks a:hover {
     text-decoration: underline;
 }
 
-.footer-icons {
+.footerIcons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.footer-icons img {
+.footerIcons img {
     width: 24px;
     height: 24px;
 }
 
-.footer-policy {
+.footerPolicy {
     color: #b3cde0;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 
-.footer-policy:hover {
+.footerPolicy:hover {
     text-decoration: underline;
 }

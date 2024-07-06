@@ -1,16 +1,16 @@
-.content-about {
-
+.contentAbout {
+    /* 必要なスタイルをここに追加 */
 }
 
-.section-box {
+.sectionBox {
     margin: 20px;
 }
 
-.section-box-bg {
+.sectionBoxBg {
     background: #F8F7EF;
 }
 
-.section-title {
+.sectionTitle {
     font-size: 38px;
     font-weight: bold;
     color: #608841;
@@ -18,7 +18,7 @@
     margin-bottom: 10px;
     letter-spacing: 3px;
 }
-.section-title::after {
+.sectionTitle::after {
     content: '';
     display: block;
     width: 50px;
@@ -27,13 +27,13 @@
     margin: 20px auto 40px;
 }
 
-.section-subtitle {
+.sectionSubtitle {
     text-align: center;
     color: #EAA200;
     margin-bottom: 30px;
 }
 
-.section-content {
+.sectionContent {
     font-size: 20px;
     line-height: 1.6;
 }
