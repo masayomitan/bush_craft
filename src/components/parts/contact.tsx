@@ -1,6 +1,7 @@
 import aboutStyles from '../../styles/module/about.module.css';
 import styles from '../../styles/module/contact.module.css';
 import commonStyles from '../../styles/module/common.module.css';
+import topStyles from '../../styles/module/top.module.css';
 
 const Contact = () => {
     return (
