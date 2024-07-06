@@ -7,6 +7,7 @@ import Plan from '@/components/parts/plan';
 import Footer from '@/components/parts/footer';
 
 import styles from '../styles/module/top.module.css';
+import commonStyles from '../styles/module/common.module.css';
 
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -52,7 +53,7 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className={styles.contentContainer}>
+                <div className={`${styles.contentContainer} ${commonStyles.fs16}`}>
                     <About />
                     <Staff />
                     <Plan />
