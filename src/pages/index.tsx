@@ -4,6 +4,8 @@ import Image from 'next/image';
 import About from '../components/parts/about';
 import Staff from '@/components/parts/staff';
 import Plan from '@/components/parts/plan';
+import Question from '@/components/parts/question';
+import Contact from '@/components/parts/contact';
 import Footer from '@/components/parts/footer';
 
 import styles from '../styles/module/top.module.css';
@@ -57,6 +59,8 @@ const Home = () => {
                     <About />
                     <Staff />
                     <Plan />
+                    <Question />
+                    <Contact />
                 </div>
                 <Footer />
 
