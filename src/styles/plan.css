@@ -1,0 +1,83 @@
+.plan-card-container {
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0 50px;
+}
+
+.plan-card-title {
+    background: #C0D860;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.plan-card-title-w {
+    background: #608841;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.plan-card-body {
+    padding: 5px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.plan-badge {
+    font-size: 16px;
+    color: #EAA200;
+    padding: 5px 15px;
+    margin: auto 10px;
+    border-radius: 50px;
+    border: 1px solid #EAA200;
+}
+
+.plan-badge-stay {
+    font-size: 16px;
+    color: #608841;
+    padding: 5px 15px;
+    margin: auto 10px;
+    border-radius: 50px;
+    border: 1px solid #608841;
+}
+
+.plan-price {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.plan-count {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.plan-description {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+
+.plan-remarks-column {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.other-event-title {
+    font-size: 20px;
+}
+
+.other-event-description {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+}

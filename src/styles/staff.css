@@ -1,0 +1,45 @@
+.bold-text {
+    font-weight: bold;
+}
+
+.staff-card-container {
+
+}
+
+.staff-image-box {
+    width: 150px;
+    height: 150px;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+
+.staff-message {
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.staff-card .view-more {
+    display: inline-block;
+    background: #B3CDE0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.view-more {
+    text-align: right;
+    display: inline-block;
+    background: #B3CDE0;
+    padding: 10px 35px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
