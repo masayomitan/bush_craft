@@ -145,3 +145,7 @@
 .taC { text-align: center; }
 .taL { text-align: left; }
 .taR { text-align: right; }
+
+.viewMore {
+    margin-right: 10px;
+}

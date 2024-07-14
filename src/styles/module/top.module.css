@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 100vh;
 }
 
 .menuButton {
@@ -23,24 +24,31 @@
     width: 40px;
     height: 4px;
     background-color: white;
-    margin-bottom: 5px;
 }
 
 .menuDropdown {
     position: absolute;
-    top: 64px;
-    left: 16px;
-    background-color: white;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #334731;
+    color: white;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    z-index: 20;
-    padding: 16px;
 }
 
 .menuItem {
-    color: black;
-    margin-bottom: 8px;
-    cursor: pointer;
+    display: block;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
 }
 
 .buttonContainer {
@@ -65,21 +73,23 @@
 .contentContainer {
     max-width: 1024px;
     margin: 0 auto;
-    position: relative;
+    padding: 20px;
 }
 
 .overlay {
     position: fixed;
-    inset: 0;
-    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
     opacity: 0;
-    transition: opacity 1s;
-    z-index: 10;
     pointer-events: none;
 }
 
 .overlay.show {
-    opacity: 0.5;
+    opacity: 1;
     pointer-events: auto;
 }
 
@@ -87,28 +97,36 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
     width: 75%;
-    background-color: white;
-    padding: 16px;
-    z-index: 20;
+    max-width: 300px;
+    height: 100%;
+    background-color: #334731;
+    color: white;
+    padding: 20px;
     transform: translateX(100%);
-    transition: transform 1s;
+    transition: transform 0.3s ease;
+    z-index: 1000;
 }
 
 .sideMenu.open {
     transform: translateX(0);
 }
 
-.close-button {
-    margin-bottom: 16px;
+.closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .sideMenuItem {
-    padding: 16px;
-    background-color: white;
-    margin-bottom: 8px;
-    transition: transform 0.7s;
-    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff40;
+    font-size: 16px;
+}
+
+.sideMenuItem:hover {
+    text-decoration: underline;
 }

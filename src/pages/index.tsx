@@ -6,6 +6,7 @@ import Staff from '@/components/parts/staff';
 import Plan from '@/components/parts/plan';
 import Question from '@/components/parts/question';
 import Contact from '@/components/parts/contact';
+import Gallery from '@/components/parts/gallery';
 import Footer from '@/components/parts/footer';
 
 import styles from '../styles/module/top.module.css';
@@ -23,6 +24,10 @@ const Home = () => {
     const handleToggle = () => {
         setIsOpen(!isOpen);
         setShowOverlay(!showOverlay);
+    };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
     };
 
     return (
@@ -43,10 +48,15 @@ const Home = () => {
                     </button>
                     {menuOpen && (
                         <div className={styles.menuDropdown}>
-                            <Link href="/"><div className={styles.menuItem}>Home</div></Link>
-                            <Link href="#about"><div className={styles.menuItem}>About</div></Link>
-                            <Link href="#program"><div className={styles.menuItem}>Program</div></Link>
-                            <Link href="#contact"><div className={styles.menuItem}>Contact</div></Link>
+                            <button onClick={closeMenu} className={styles.closeButton}>×</button>
+                            <Link href="/"><div className={styles.menuItem} onClick={closeMenu}>トップ</div></Link>
+                            <Link href="#about"><div className={styles.menuItem} onClick={closeMenu}>このサークルについて</div></Link>
+                            <Link href="#bushcraft"><div className={styles.menuItem} onClick={closeMenu}>Bushcraftとは</div></Link>
+                            <Link href="#staff"><div className={styles.menuItem} onClick={closeMenu}>スタッフ紹介</div></Link>
+                            <Link href="#plan"><div className={styles.menuItem} onClick={closeMenu}>プラン料金表</div></Link>
+                            <Link href="#faq"><div className={styles.menuItem} onClick={closeMenu}>よくあるご質問</div></Link>
+                            <Link href="#contact"><div className={styles.menuItem} onClick={closeMenu}>お申込み・お問い合わせ</div></Link>
+                            <Link href="#gallery"><div className={styles.menuItem} onClick={closeMenu}>ギャラリー</div></Link>
                         </div>
                     )}
                     <div className={styles.buttonContainer}>
@@ -61,6 +71,7 @@ const Home = () => {
                     <Plan />
                     <Question />
                     <Contact />
+                    <Gallery />
                 </div>
                 <Footer />
 

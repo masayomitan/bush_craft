@@ -1,0 +1,10 @@
+<svg id="コンポーネント_3_5" data-name="コンポーネント 3 – 5" xmlns="http://www.w3.org/2000/svg" width="174" height="36" viewBox="0 0 174 36">
+  <g id="長方形_20" data-name="長方形 20" fill="#fff" stroke="#224014" stroke-width="0.5">
+    <rect width="160" height="36" stroke="none"/>
+    <rect x="0.25" y="0.25" width="159.5" height="35.5" fill="none"/>
+  </g>
+  <g id="グループ_73" data-name="グループ 73" transform="translate(0 9)">
+    <text id="view_more" data-name="view more" fill="#224014" font-size="18" font-family="YuMin-Extrabold, YuMincho" font-weight="800"><tspan x="36" y="16">view more</tspan></text>
+  </g>
+  <line id="線_7" data-name="線 7" x2="28" transform="translate(146 18)" fill="none" stroke="#224014" stroke-width="0.5"/>
+</svg>

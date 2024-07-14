@@ -1,0 +1,63 @@
+.galleryContainer {
+    background: #F8F7EF;
+    padding: 20px;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 38px;
+    font-weight: bold;
+    color: #608841;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #EAA200;
+    margin: 20px auto 40px;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 10px;
+}
+
+.imageContainer {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px; /* ここで画像ブロックのサイズを指定します */
+    background-color: #ddd; /* 背景色を指定します */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end; /* 右寄せにする */
+    margin-top: 20px;
+}
+
+.viewMoreButton {
+    background-color: #B3CDE0;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.viewMore {
+    margin-right: 10px;
+}

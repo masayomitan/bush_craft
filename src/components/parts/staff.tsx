@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '../../styles/module/staff.module.css';
 import aboutStyles from '../../styles/module/about.module.css';
 import commonStyles from '../../styles/module/common.module.css';
+import Viewmore from '../atoms/viewmore.svg';
 
 const Staff = () => {
     return (
@@ -28,7 +29,7 @@ const Staff = () => {
                         社会人ブッシュクラフトサークルという形で、参加者とキャンプをしながら火起こしや自然に目を向けることの楽しさを伝えています。普通のキャンプに比べ、少しハードルが高く感じがちですが、初心者でもできるようにきちんとレベルを合わせて内容を組んでいます。是非遊びに来てね(‘ω’)
                     </div>
                     <div className={commonStyles.taR}>
-                        <a href="#" className={styles.viewMore}>view more</a>
+                        <Viewmore className={styles.viewMore} />
                     </div>
                 </section>
 
@@ -64,8 +65,8 @@ const Staff = () => {
                             ブッシュクラフトを食の面からも楽しんでくださいね！
                             虫や、お悩み相談も得意です。
                         </div>
-                        <div className={commonStyles.taR}>
-                            <a href="#" className={styles.viewMore}>view more</a>
+                        <div className={styles.buttonContainer}>
+                            <Viewmore className={styles.viewMore} />
                         </div>
                     </div>
                 </section>
