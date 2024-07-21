@@ -1,7 +1,7 @@
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/module/gallery.module.css';
-import Viewmore from '../atoms/viewmore.svg';
 
 const images = [
     '/images/gallery/work@2x.png',
@@ -12,17 +12,19 @@ const images = [
     '/images/gallery/bed2@2x.png',
     '/images/gallery/fire@2x.png',
     '/images/gallery/sunset@2x.png',
-]
+];
 
-const Gallery = () => {
+const GalleryPage = () => {
+    const router = useRouter();
+
     return (
         <div className={styles.galleryContainer}>
             <div>
                 <div className={styles.sectionTitle}>ギャラリー</div>
             </div>
-            <div className={styles.gallery}>
+            <div className={styles.galleryGrid}>
                 {images.map((src, index) => (
-                    <div key={index} className={styles.imageContainer}>
+                    <div key={index} className={styles.imageContainerGrid}>
                         <Image 
                             src={src} 
                             alt={`Gallery Image ${index + 1}`} 
@@ -32,13 +34,8 @@ const Gallery = () => {
                     </div>
                 ))}
             </div>
-            <div className={styles.buttonContainer}>
-                <Link href="/gallery">
-                    <Viewmore className={styles.viewMore} />
-                </Link>
-            </div>
         </div>
     );
 };
 
-export default Gallery;
+export default GalleryPage;
