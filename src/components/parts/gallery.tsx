@@ -17,16 +17,14 @@ const images = [
 const Gallery = () => {
     return (
         <div className={styles.galleryContainer}>
-            <div>
-                <div className={styles.sectionTitle}>ギャラリー</div>
-            </div>
+            <div id="gallery" className={styles.sectionTitle}>ギャラリー</div>
             <div className={styles.gallery}>
                 {images.map((src, index) => (
                     <div key={index} className={styles.imageContainer}>
                         <Image 
                             src={src} 
                             alt={`Gallery Image ${index + 1}`} 
-                            width={200} 
+                            width={200}
                             height={200} 
                         />
                     </div>

@@ -36,7 +36,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: #334731;
     color: white;
@@ -49,8 +49,9 @@
     display: block;
     color: white;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
+    text-decoration:none;
 }
 
 .menuItem:hover {

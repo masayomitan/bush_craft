@@ -6,9 +6,7 @@ import topStyles from '../../styles/module/top.module.css';
 const Contact = () => {
     return (
         <div>
-            <div>
-                <div className={`${aboutStyles.sectionTitle} ${styles.sectionTitle}`}>お問い合わせ</div>
-            </div>
+            <div id="contact" className={`${aboutStyles.sectionTitle} ${styles.sectionTitle}`}>お問い合わせ</div>
             <div className={aboutStyles.sectionBox}>
                 <p className={styles.sectionContent}>
                     ご不明な点はお気軽にお問い合わせください。また、お仕事・メディア協力のご依頼等もこちらからお問い合わせください。

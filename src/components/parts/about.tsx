@@ -20,7 +20,7 @@ const TopExplain = () => {
                     </div>
                 </section>
 
-                <section className={styles.sectionBoxBg}>
+                <section id="bushcraft" className={styles.sectionBoxBg}>
                     <div className={`${styles.sectionBox} ${commonStyles.pb40}`}>
                         <h2 className={`${styles.sectionTitle} ${commonStyles.pt30}`}>Bushcraftとは</h2>
                         <p className={styles.sectionContent}>

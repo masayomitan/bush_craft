@@ -46,14 +46,30 @@ const Header = () => {
                 {menuOpen && (
                     <div className={styles.menuDropdown}>
                         <button onClick={closeMenu} className={styles.closeButton}>×</button>
-                        <Link href="/"><div className={styles.menuItem} onClick={closeMenu}>トップ</div></Link>
-                        <Link href="#about"><div className={styles.menuItem} onClick={closeMenu}>このサークルについて</div></Link>
-                        <Link href="#bushcraft"><div className={styles.menuItem} onClick={closeMenu}>Bushcraftとは</div></Link>
-                        <Link href="#staff"><div className={styles.menuItem} onClick={closeMenu}>スタッフ紹介</div></Link>
-                        <Link href="#plan"><div className={styles.menuItem} onClick={closeMenu}>プラン料金表</div></Link>
-                        <Link href="#faq"><div className={styles.menuItem} onClick={closeMenu}>よくあるご質問</div></Link>
-                        <Link href="#contact"><div className={styles.menuItem} onClick={closeMenu}>お申込み・お問い合わせ</div></Link>
-                        <Link href="#gallery"><div className={styles.menuItem} onClick={closeMenu}>ギャラリー</div></Link>
+                        <Link href="/" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>トップ</a>
+                        </Link>
+                        <Link href="#about" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>このサークルについて</a>
+                        </Link>
+                        <Link href="#bushcraft" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>Bushcraftとは</a>
+                        </Link>
+                        <Link href="#staff" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>スタッフ紹介</a>
+                        </Link>
+                        <Link href="#plan" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>プラン料金表</a>
+                        </Link>
+                        <Link href="#faq" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>よくあるご質問</a>
+                        </Link>
+                        <Link href="#contact" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>お申込み・お問い合わせ</a>
+                        </Link>
+                        <Link href="#gallery" legacyBehavior>
+                            <a className={styles.menuItem} onClick={closeMenu}>ギャラリー</a>
+                        </Link>
                     </div>
                 )}
             </div>

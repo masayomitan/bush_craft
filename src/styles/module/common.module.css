@@ -149,3 +149,10 @@
 .viewMore {
     margin-right: 10px;
 }
+
+.breadcrumb {
+    margin-bottom: 20px;
+    text-align: right;
+    margin: 20px;
+    font-size: 20px;
+}
