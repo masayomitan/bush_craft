@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import aboutStyles from '../../styles/module/about.module.css';
-import styles from '../../styles/module/question.module.css';
+import questionStyles from '../../styles/module/question.module.css';
 
 type QuestionItem = {
     question: string; 
@@ -36,18 +36,18 @@ const Question = () => {
     return (
         <div>
             <div>
-                <div className={`${aboutStyles.sectionTitle} ${styles.sectionTitle}`}>よくあるご質問</div>
+                <div className={`${aboutStyles.sectionTitle} ${questionStyles.sectionTitle}`}>よくあるご質問</div>
             </div>
             <div className={aboutStyles.sectionBox}>
                 {questions.map((item, index) => (
                     <div key={index}>
-                        <div className={styles.questionItem} onClick={() => handleToggle(index)}>
-                            <div className={styles.questionTitle}>
+                        <div className={questionStyles.questionItem} onClick={() => handleToggle(index)}>
+                            <div className={questionStyles.questionTitle}>
                                 <span>Q</span><div dangerouslySetInnerHTML={{ __html: item.question }} />
                             </div>
-                            <div className={styles.icon}>{activeIndexes.includes(index) ? '−' : '＋'}</div>
+                            <div className={questionStyles.icon}>{activeIndexes.includes(index) ? '−' : '＋'}</div>
                         </div>
-                        <div className={`${styles.answerTitle} ${activeIndexes.includes(index) ? '' : styles.hidden}`}>
+                        <div className={`${questionStyles.answerTitle} ${activeIndexes.includes(index) ? '' : questionStyles.hidden}`}>
                             <span>A</span> <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                         </div>
                     </div>
