@@ -31,39 +31,42 @@
 .imageContainer {
     flex: 0 0 auto;
     width: 200px;
-    height: 200px; /* ここで画像ブロックのサイズを指定します */
-    background-color: #ddd; /* 背景色を指定します */
+    height: 200px;
+    background-color: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
     overflow: hidden;
 }
 
-
 .galleryGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
 }
 
 .imageContainerGrid {
-    width: calc(50% - 10px); /* 2つのブロックが横に並ぶように幅を設定 */
-    height: 200px; /* 画像ブロックの高さを指定します */
-    background-color: #ddd; /* 背景色を指定します */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background-color: #ddd;
     overflow: hidden;
+}
+
+.imageContainerGrid img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
 .buttonContainer {
     display: flex;
-    justify-content: flex-end; /* 右寄せにする */
+    justify-content: flex-end;
     margin-top: 20px;
 }
 

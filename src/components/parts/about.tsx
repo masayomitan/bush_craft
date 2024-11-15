@@ -1,11 +1,17 @@
 import styles from '../../styles/module/about.module.css';
 import commonStyles from '../../styles/module/common.module.css';
+import Link from 'next/link';
 
 const TopExplain = () => {
     return (
         <>
             <div className={styles.contentAbout}>    
                 <section id="about">
+                    <div className={styles.buttonContainer}>
+                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd8_wBLF_Q24rt5dt3T0apcQ4EY-JD5qxoPgYMK9erZ_rHVGA/viewform" target="_blank" className={styles.contactButton}>
+                            お申込みはこちら
+                        </Link>
+                    </div>
                     <div className={styles.sectionBox}>
                         <h2 className={styles.sectionTitle}>このサークルについて</h2>
                         <p className={styles.sectionContent}>

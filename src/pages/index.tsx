@@ -19,9 +19,6 @@ const Home = () => {
     return (
         <>
             <main>
-                
-                
-
                 <div className={`${styles.contentContainer} ${commonStyles.fs16}`}>
                     <About />
                     <Staff />

@@ -27,7 +27,15 @@ const StaffPage = () => {
                     <h2 className={aboutStyles.sectionTitle}>スタッフ紹介</h2>
                     <div className={`${styles.staffCardContainer} ${commonStyles.flex}`}>
                         <div className={styles.staffImageBox}>
-                            test
+                            <Image 
+                                src="/images/person/piko@2x.png" 
+                                alt="Ozawa Mariko" 
+                                width={150}
+                                height={150}
+                                style={{ 
+                                    objectFit: 'contain',
+                                }}
+                            />
                         </div>
                         <div className="staff-card">
                             <div className={`${commonStyles.fs18} ${commonStyles.bold}`}>主催</div>
@@ -66,7 +74,7 @@ const StaffPage = () => {
                         <div className={`${styles.staffCardContainer} ${commonStyles.pt40}`}>
                             <div className={styles.staffImageBox}>
                                 <Image 
-                                    src="/images/person/6407_0@2x.png" 
+                                    src="/images/person/mariko@2x.png" 
                                     alt="Ozawa Mariko" 
                                     width={150}
                                     height={150}
@@ -93,7 +101,13 @@ const StaffPage = () => {
                             ブッシュクラフトを食の面からも楽しんでくださいね！</p>
                             <p>虫や、お悩み相談も得意です。</p>
                         </div>
-                        <div className={`${galleryStyles.staffMessage}`}>
+                        <div className={`${styles.staffMessage}`}>
+                            <p className={`${commonStyles.bold} ${commonStyles.fs18}`}>所持資格</p>
+                            <p>・JBS認定ブッシュクラフトアドバイザー®  </p>
+                            <p>・食品衛生責任者 </p>
+                            <p>・こころにまるを認定心理カウンセラー</p>
+                        </div>
+                        {/* <div className={`${galleryStyles.staffMessage}`}>
                             <p className={`${commonStyles.bold} ${commonStyles.fs18}`}>料理</p>
                             <div className={galleryStyles.gallery}>
                                 {images.map((src, index) => (
@@ -107,7 +121,7 @@ const StaffPage = () => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
             </div>

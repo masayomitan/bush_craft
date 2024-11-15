@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from '../../styles/module/gallery.module.css';
 
 const images = [

@@ -10,17 +10,17 @@ type QuestionItem = {
 const questions: QuestionItem[] = [
     {
         question: 'アウトドア初心者ですが大丈夫ですか？',
-        answer: '大丈夫です。キャンプが初めてでもできるようレベルを調整してあります。火や刃物を扱うので、マナーや安全指導などの知識面もカバーしています。'
+        answer: '大丈夫です。キャンプが初めてでもできるようレベルを調整してあります。<br>火や刃物を扱うので、マナーや安全指導などの知識面もカバーしています。'
     },
     {
         question: '一人参加でも大丈夫ですか？',
         answer: '一人参加でも大丈夫です。'
     },
     {
-        question: 'テントなど持っていません。道具はレンタルできますか？',
+        question: 'テントなど持っていません。<br>道具はレンタルできますか？',
         answer: 'はい、道具はレンタルできます。'
     }
-];
+]
 
 const Question = () => {
     const [activeIndexes, setActiveIndexes] = useState<number[]>([]);
@@ -31,7 +31,7 @@ const Question = () => {
         } else {
             setActiveIndexes([...activeIndexes, index]);
         }
-    };
+    }
 
     return (
         <div>
@@ -43,18 +43,18 @@ const Question = () => {
                     <div key={index}>
                         <div className={styles.questionItem} onClick={() => handleToggle(index)}>
                             <div className={styles.questionTitle}>
-                                <span>Q</span> {item.question}
+                                <span>Q</span><div dangerouslySetInnerHTML={{ __html: item.question }} />
                             </div>
                             <div className={styles.icon}>{activeIndexes.includes(index) ? '−' : '＋'}</div>
                         </div>
-                        <div className={`${styles.answer} ${activeIndexes.includes(index) ? '' : styles.hidden}`}>
-                            <span>A</span> {item.answer}
+                        <div className={`${styles.answerTitle} ${activeIndexes.includes(index) ? '' : styles.hidden}`}>
+                            <span>A</span> <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Question;

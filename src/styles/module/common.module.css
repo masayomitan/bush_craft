@@ -139,6 +139,7 @@
 .fs30 { font-size: 30px; }
 
 .flex { display: flex; }
+.between { display: flex; justify-content: space-between; }
 
 .bold { font-weight: bold; }
 

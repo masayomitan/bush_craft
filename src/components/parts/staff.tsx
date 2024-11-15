@@ -13,7 +13,15 @@ const Staff = () => {
                     <h2 className={aboutStyles.sectionTitle}>スタッフ紹介</h2>
                     <div className={`${styles.staffCardContainer} ${commonStyles.flex}`}>
                         <div className={styles.staffImageBox}>
-                            test
+                            <Image 
+                                src="/images/person/piko@2x.png" 
+                                alt="Shinya Kazuhiko" 
+                                width={150}
+                                height={150}
+                                style={{ 
+                                    objectFit: 'contain',
+                                }}
+                            />
                         </div>
                         <div className="staff-card">
                             <div className={`${commonStyles.fs18} ${commonStyles.bold}`}>主催</div>
@@ -42,7 +50,7 @@ const Staff = () => {
                         <div className={`${styles.staffCardContainer} ${commonStyles.pt40}`}>
                             <div className={styles.staffImageBox}>
                                 <Image 
-                                    src="/images/person/6407_0@2x.png" 
+                                    src="/images/person/mariko@2x.png" 
                                     alt="Ozawa Mariko" 
                                     width={150}
                                     height={150}

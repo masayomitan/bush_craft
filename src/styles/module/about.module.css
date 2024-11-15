@@ -35,3 +35,32 @@
 .sectionContent {
     line-height: 1.6;
 }
+
+.contactButton {
+    display: none;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contactButton {
+    display: inline-block;
+    background-color: #EAA200;
+    color: white;
+    padding: 15px 80px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font: normal bold 18px/31px 'Yu Gothic', sans-serif;
+}
+
+/* PC版（768px以上）の場合に非表示 */
+@media screen and (min-width: 769px) {
+    .contactButton {
+        display: none;
+    }
+}

@@ -1,7 +1,7 @@
 import aboutStyles from '../../styles/module/about.module.css';
 import styles from '../../styles/module/contact.module.css';
 import commonStyles from '../../styles/module/common.module.css';
-import topStyles from '../../styles/module/top.module.css';
+import Link from 'next/link';
 
 const Contact = () => {
     return (
@@ -12,9 +12,14 @@ const Contact = () => {
                     ご不明な点はお気軽にお問い合わせください。また、お仕事・メディア協力のご依頼等もこちらからお問い合わせください。
                 </p>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.contactButton}>
-                        お申込・お問い合わせはこちら
-                    </button>
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd8_wBLF_Q24rt5dt3T0apcQ4EY-JD5qxoPgYMK9erZ_rHVGA/viewform" target="_blank">
+                        お申込みはこちら
+                    </Link>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeKhh98MyNi5aydmclYQf_z7ZlRBVAtT5OUdA6RssfznAahhQ/viewform" target="_blank">
+                        お問い合わせはこちら
+                    </Link>
                 </div>
                 <div className={`${commonStyles.bold} ${commonStyles.fs16} ${commonStyles.mb10}`}>ご依頼内容一例</div>
                 <ul className={styles.list}>
