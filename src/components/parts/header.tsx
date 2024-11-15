@@ -78,22 +78,8 @@ const Header = () => {
                 className={`${styles.overlay} ${showOverlay ? styles.show : ''}`}
                 onClick={handleToggle}
             ></div>
-
-            <div className={`${styles.sideMenu} ${isOpen ? styles.open : ''}`}
-                onClick={handleToggle}
-            >
-                <button className={styles.closeButton} onClick={handleToggle}>x</button>
-                <ul onClick={e => e.stopPropagation()}>
-                    <li className={styles.sideMenuItem}>メニュー1</li>
-                    <li className={styles.sideMenuItem}>メニュー2</li>
-                    <li className={styles.sideMenuItem}>メニュー3</li>
-                    <li className={styles.sideMenuItem}>メニュー4</li>
-                    <li className={styles.sideMenuItem}>メニュー5</li>
-                    <li className={styles.sideMenuItem}>メニュー6</li>
-                </ul>
-            </div>
         </>
-    );
-};
+    )
+}
 
 export default Header;
