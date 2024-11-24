@@ -8,10 +8,10 @@ const Footer = () => {
         <footer className={footerStyles.footer}>
             <div className={commonStyles.between}>
                 <div className={footerStyles.footerLogo}>東京ブッシュクラフト</div>
-                {/* <div className={styles.footerIcons}>
-                    <Link href="https://instagram.com"><Image src="/images/sns/instagram.png" alt="Instagram" width={24} height={24} /></Link>
-                    <Link href="https://twitter.com"><Image src="/images/sns/twitter.png" alt="Twitter" width={24} height={24} /></Link>
-                </div> */}
+                <div className={footerStyles.footerIcons}>
+                    <Link href="https://www.instagram.com/kazuhikosan98/" target="_blank"><Image src="/images/sns/instagram.png" alt="Instagram" width={24} height={24} /></Link>
+                    {/* <Link href="https://twitter.com"><Image src="/images/sns/twitter.png" alt="Twitter" width={24} height={24} /></Link> */}
+                </div>
             </div>
             <ul className={footerStyles.footerLinks}>
                 <li><Link href="#top">トップ</Link></li>
