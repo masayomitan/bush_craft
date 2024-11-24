@@ -1,17 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import styles from '../../styles/module/gallery.module.css';
-
-const images = [
-    '/images/gallery/work@2x.png',
-    '/images/gallery/work2@2x.png',
-    '/images/gallery/gather@2x.png',
-    '/images/gallery/gather2@2x.png',
-    '/images/gallery/bed@2x.png',
-    '/images/gallery/bed2@2x.png',
-    '/images/gallery/fire@2x.png',
-    '/images/gallery/sunset@2x.png',
-];
+import { galleryImages } from '../../constants/images'
 
 const GalleryPage = () => {
     const router = useRouter();
@@ -22,7 +12,7 @@ const GalleryPage = () => {
                 <div className={styles.sectionTitle}>ギャラリー</div>
             </div>
             <div className={styles.galleryGrid}>
-                {images.map((src, index) => (
+                {galleryImages.map((src, index) => (
                     <div key={index} className={styles.imageContainerGrid}>
                         <Image 
                             src={src} 
