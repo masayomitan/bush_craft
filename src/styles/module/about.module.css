@@ -1,5 +1,5 @@
 .contentAbout {
-    /* 必要なスタイルをここに追加 */
+    
 }
 
 .sectionBox {
@@ -50,7 +50,7 @@
     display: inline-block;
     background-color: #EAA200;
     color: white;
-    padding: 15px 80px;
+    padding: 10px 80px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
